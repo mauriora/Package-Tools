@@ -1,0 +1,19 @@
+{
+  "name": "@mauriora/package-tools",
+  "description": "General package tools like config files defaults",
+  "version": "0.0.1",
+  "private": true,
+  "author": {
+    "name": "Mauri-Ora",
+    "email": "dennis.kuhn@kuhn.geek.co.nz"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "scripts": {},
+  "dependencies": {
+  },
+  "devDependencies": {
+  },
+  "peerDependencies": {}
+}
