@@ -1,8 +1,8 @@
 {
   "name": "@mauriora/package-tools",
-  "description": "General package tools like config files defaults",
+  "description": "General package tools like config files defaults, e.g. tsconfig",
   "version": "0.0.1",
-  "private": true,
+  "private": false,
   "author": {
     "name": "Mauri-Ora",
     "email": "dennis.kuhn@kuhn.geek.co.nz"
@@ -10,6 +10,7 @@
   "engines": {
     "node": ">=14.0.0"
   },
+  "files": [ "./includes" ],
   "scripts": {},
   "dependencies": {
   },
