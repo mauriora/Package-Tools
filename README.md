@@ -2,6 +2,11 @@
 
 General package tools like config files defaults
 
+- [Modules](#modules)
+  - [loadModules](#loadmodules)
+  - [unloadModules](#unloadmodules)
+- [Publish](#publish)
+
 ## Modules
 
 Add this packge as dependecy of the root workspace and execute the commands there.
