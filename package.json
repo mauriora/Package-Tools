@@ -3,7 +3,6 @@
   "description": "Tools for any package like config files defaults, e.g. tsconfig",
   "version": "0.0.10",
   "license": "MIT",
-  "private": false,
   "author": {
     "name": "Mauri-Ora",
     "email": "dennis.kuhn@kuhn.geek.co.nz"
@@ -13,6 +12,5 @@
   },
   "files": [
     "./includes"
-  ],
-  "scripts": {}
+  ]
 }
