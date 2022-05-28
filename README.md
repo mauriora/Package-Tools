@@ -1,11 +1,40 @@
 # Package-Tools
 
-General package tools like config files defaults
+General package tools and config files defaults
 
+- [Config files defaults](#config-files-defaults)
+  - [tsconfig.json](#tsconfigjson)
+    - [tsconfig example](#tsconfig-example)
 - [Modules](#modules)
   - [loadModules](#loadmodules)
   - [unloadModules](#unloadmodules)
 - [Publish](#publish)
+
+## Config files defaults
+
+### tsconfig.json
+
+This package contains a `tsconfig.json` file to be reused in typescript projects to ensure a common configuration. It enables a common upgrade as well.
+
+#### tsconfig example
+
+`tsconfig.json` in your project:
+
+```json
+{
+  "extends": "@mauriora/package-tools/includes/tsconfig.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "rootDir": "./src",
+    "typeRoots": [
+      "./node_modules/@types", "./node_modules/@microsoft"      
+    ]
+  },
+  "include": [
+    "src/**/*.ts"
+  ]
+}
+```
 
 ## Modules
 
