@@ -2,6 +2,11 @@
 
 General package tools and config files defaults
 
+> This is part of the [hybrid repro MVC SharePoint example implementation](https://github.com/mauriora/reusable-hybrid-repo-mvc-spfx-examples)
+
+## Table of content
+
+- [Table of content](#table-of-content)
 - [Config files defaults](#config-files-defaults)
   - [tsconfig.json](#tsconfigjson)
     - [tsconfig example](#tsconfig-example)
