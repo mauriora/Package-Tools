@@ -1,7 +1,7 @@
 {
   "name": "@mauriora/package-tools",
   "description": "Tools for any package like config files defaults, e.g. tsconfig",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
   "author": {
     "name": "Mauri-Ora",

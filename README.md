@@ -81,5 +81,5 @@ yarn unloadModules shared/Package-Tools
 In this folder execute:
 
 ```shell
-yarn publish --access public
+  yarn npm publish --access public
 ```
