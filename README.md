@@ -38,7 +38,6 @@ This package contains a `tsconfig.json` file to be reused in typescript projects
 }
 ```
 
-
 ## Publish
 
 In this folder execute:
