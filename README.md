@@ -10,9 +10,6 @@ General package tools and config files defaults
 - [Config files defaults](#config-files-defaults)
   - [tsconfig.json](#tsconfigjson)
     - [tsconfig example](#tsconfig-example)
-- [Modules](#modules)
-  - [loadModules](#loadmodules)
-  - [unloadModules](#unloadmodules)
 - [Publish](#publish)
 
 ## Config files defaults
@@ -41,40 +38,6 @@ This package contains a `tsconfig.json` file to be reused in typescript projects
 }
 ```
 
-## Modules
-
-Add this packge as dependecy of the root workspace and execute the commands there.
-
-(`Un`)`loadModules` scripts work on submodules already part of the root module (workspace).
-After (un)loading it will call `yarn install`.
-
-### loadModules
-
-This (down)loads a module already part of the root workspace.
-
-```shell
-yarn loadModules .\shared\Package-Tools\
-```
-
-or
-
-```shell
-yarn loadModules shared/Package-Tools
-```
-
-### unloadModules
-
-This empties the working tree of a module already part of the root workspace.
-
-```shell
-yarn unloadModules .\shared\Package-Tools\
-```
-
-or
-
-```shell
-yarn unloadModules shared/Package-Tools
-```
 
 ## Publish
 
