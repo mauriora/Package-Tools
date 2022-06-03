@@ -1,16 +1,20 @@
 {
-  "name": "@mauriora/package-tools",
-  "description": "Tools for any package like config files defaults, e.g. tsconfig",
-  "version": "0.1.2",
-  "license": "MIT",
-  "author": {
-    "name": "Mauri-Ora",
-    "email": "dennis.kuhn@kuhn.geek.co.nz"
-  },
-  "engines": {
-    "node": ">=14.0.0"
-  },
-  "files": [
-    "./includes"
-  ]
+    "name": "@mauriora/package-tools",
+    "description": "Tools for any package like config files defaults, e.g. tsconfig",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/mauriora/Package-Tools.git"
+    },
+    "version": "0.1.2",
+    "license": "MIT",
+    "author": {
+        "name": "Mauri-Ora",
+        "email": "dennis.kuhn@kuhn.geek.co.nz"
+    },
+    "engines": {
+        "node": ">=14.0.0"
+    },
+    "files": [
+        "./includes"
+    ]
 }
