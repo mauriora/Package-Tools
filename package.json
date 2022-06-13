@@ -1,6 +1,6 @@
 {
     "name": "@mauriora/package-tools",
-    "description": "Tools for any package like config files defaults, e.g. tsconfig",
+    "description": "Tools for any package like config files base files, e.g. tsconfig, semantic-release",
     "repository": {
         "type": "git",
         "url": "https://github.com/mauriora/Package-Tools.git"
@@ -15,6 +15,15 @@
         "node": ">=14.0.0"
     },
     "files": [
+        "index.js",
         "./includes"
-    ]
+    ],
+    "devDependencies": {
+        "dotenv-cli": "^5.1.0",
+        "semantic-release": "^19.0.3"
+    },
+    "scripts": {
+        "release": "yarn run dotenv yarn run semantic-release --dry-run",
+        "semantic-release": "semantic-release"
+    }
 }

@@ -10,17 +10,18 @@ General package tools and config files defaults
 - [Config files defaults](#config-files-defaults)
   - [tsconfig.json](#tsconfigjson)
     - [tsconfig example](#tsconfig-example)
+  - [releaserc](#releaserc)
 - [Publish](#publish)
 
 ## Config files defaults
 
 ### tsconfig.json
 
-This package contains a `tsconfig.json` file to be reused in typescript projects to ensure a common configuration. It enables a common upgrade as well.
+The [tsconfig.json](includes/tsconfig.json) file can be reused in typescript projects to ensure a common configuration. It enables a common upgrade as well.
 
 #### tsconfig example
 
-`tsconfig.json` in your project:
+Add the following `tsconfig.json` to your project folder:
 
 ```json
 {
@@ -36,6 +37,34 @@ This package contains a `tsconfig.json` file to be reused in typescript projects
     "src/**/*.ts"
   ]
 }
+```
+
+### releaserc
+
+The base release config to define common streams for common branches. It is contained in the file [index.js](index.js)
+
+Add the following `.releaserc.json` to your project folder:
+
+```json
+{
+    "extends": "@mauriora/package-tools"
+}
+```
+
+in your .env file store the credentials:
+
+```.env
+GH_TOKEN=ghp_<...Your.GitHub.key................>
+NPM_TOKEN=npm_<..Your.NPM.key....................>
+```
+
+in your `package.json` add:
+
+```json
+    "scripts": {
+        "release": "yarn run dotenv yarn run semantic-release --dry-run",
+        "semantic-release": "semantic-release"
+    }
 ```
 
 ## Publish
